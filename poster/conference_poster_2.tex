@@ -26,6 +26,7 @@
 \usetheme{I6pd2} % Use the I6pd2 theme supplied with this template
 
 \usepackage[english]{babel} % English language/hyphenation
+\usepackage[utf8]{inputenc}
 
 \usepackage{amsmath,amsthm,amssymb,latexsym} % For including math equations, theorems, symbols, etc
 
@@ -46,7 +47,7 @@
 
 \title{\huge Supervised Classification of Emission Stars Spectra} % Poster title
 
-\author{Jaroslav Vazny, Petr Skoda} % Author(s)
+\author{Jaroslav Vážný, Petr Škoda} % Author(s)
 
 \institute{Astronomical Institute of the Academy of Sciences of the Czech Republic} % Institution(s)
 
@@ -79,7 +80,7 @@
 \begin{block}{Objectives}
 
 \begin{enumerate}
-\item Classify Emission star spectra based on H-$\alpha$ line profile.
+\item Classify emission star spectra based on H-$\alpha$ line profile.
 \item Compare methods for dimensionality reduction.
 \item Tune classifier parameters.
 \end{enumerate}
@@ -320,7 +321,7 @@ avg/total & 0.98  &    0.98  &    0.98   &    452 \\
 \begin{block}{Conclusion}
 
 \begin{itemize}
-\item It is possible to dramatically reduce the number of dimension of spectra in classification problem (here from 778 to 10).
+\item It is possible to dramatically reduce the number of dimensions of spectra in classification problem (here from 778 to 10).
 \item PCA, Isomap, LLE and has similar effects in this concrete classification problem.
 \item It is always important to tune correcponding hyperparameters.
 \end{itemize}
