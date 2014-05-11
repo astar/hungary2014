@@ -95,7 +95,7 @@
 
 \begin{itemize}
 \item 
-There are 1805 manually classified spectra from Ondřejov observatory divided into 4 categories based on profile of the spectra line. We want to train a svm classifier to automatically categorize the rest. Figure on the left shows the average spectrum in each cateory and on the right there are samples of individual spetra.
+There are 1805 manually classified spectra from Ondřejov observatory divided into 4 categories based on profile of the H-$\alpha$ line. We want to train a SVM classifier to automatically categorize the rest. Figure on the left shows the average spectrum in each cateory and on the right there are samples of individual spetra.
 
 
 \end{itemize}
@@ -114,7 +114,7 @@ There are 1805 manually classified spectra from Ondřejov observatory divided in
 %\begin{columns} % Subdivide the first main column
 %\begin{column}{.54\textwidth} % The first subdivided column within the first main column
 \begin{itemize}
-\item Each spetrum has 778 points. Different approaches were tested for dimensionlity reduction.
+\item Each spectrum has 778 points. Different approaches were tested for dimensionlity reduction.
 \begin{itemize}
 \item PCA: Principal component analysis. Linear dimensionality reduction using Singular Value Decomposition of the data and keeping only the most significant singular vectors to project the data to a lower dimensional space.
 \item Isomap: Isometric Mapping. Can be viewed as an extension of Multi-dimensional Scaling (MDS) or Kernel PCA. Isomap seeks a lower-dimensional embedding which maintains geodesic distances between all points.
@@ -155,7 +155,7 @@ There are 1805 manually classified spectra from Ondřejov observatory divided in
 \begin{columns} % Subdivide the first main column
 \begin{column}{.4\textwidth} % The first subdivided column within the first main column
 \begin{itemize}
-\item Support Vector Machines (SVM) was used as a classifier with rbf kernal ($\exp(-\gamma |x-x'|^2)$). Grid search was used to 
+\item Support Vector Machines (SVM) was used as a classifier with Radial Basis Function (RBF) kernal ($\exp(-\gamma |x-x'|^2)$). Grid search was used to 
 find optimal values for $C$ and $\gamma$ parameters. There is an example of heatmap for optimal parameters for data reduced by Isomap method. 
 
 
