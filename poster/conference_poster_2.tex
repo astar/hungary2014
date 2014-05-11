@@ -55,7 +55,7 @@
 %	FOOTER TEXT
 %----------------------------------------------------------------------------------------
 
-\newcommand{\leftfoot}{\url{http://physics.muni.cz/~vazny/wiki/index.php/Main_Page}} % Left footer text
+\newcommand{\leftfoot}{\url{http://physics.muni.cz/~vazny/wiki/index.php}} % Left footer text
 
 \newcommand{\rightfoot}{jaroslav.vazny@gmail.com} % Right footer text
 
@@ -95,7 +95,7 @@
 
 \begin{itemize}
 \item 
-There are 1805 manually classified spectra from Ondrejov observatory divided into 4 categories based on profile of the spectra line. We want to train a svm classifier to automatically categorize the rest. Figure on the left shows the average spectrum in each cateories and on the right there are samples of individual spetra.
+There are 1805 manually classified spectra from Ondřejov observatory divided into 4 categories based on profile of the spectra line. We want to train a svm classifier to automatically categorize the rest. Figure on the left shows the average spectrum in each cateory and on the right there are samples of individual spetra.
 
 
 \end{itemize}
@@ -155,8 +155,8 @@ There are 1805 manually classified spectra from Ondrejov observatory divided int
 \begin{columns} % Subdivide the first main column
 \begin{column}{.4\textwidth} % The first subdivided column within the first main column
 \begin{itemize}
-\item Support Vector Machines (SVM) classificateor with rbf kernal ($\exp(-\gamma |x-x'|^2)$) was used. Grid search is used to 
-find optimal values for $C$ and $\gamma$ parameters. There is an exaple of heatmap for optimal parameters for data reduced by Isomap method. 
+\item Support Vector Machines (SVM) was used as a classifier with rbf kernal ($\exp(-\gamma |x-x'|^2)$). Grid search was used to 
+find optimal values for $C$ and $\gamma$ parameters. There is an example of heatmap for optimal parameters for data reduced by Isomap method. 
 
 
 
@@ -194,7 +194,7 @@ find optimal values for $C$ and $\gamma$ parameters. There is an exaple of heatm
 \begin{block}{Contact Information}
 
 \begin{itemize}
-\item Web: \url{http://physics.muni.cz/~vazny/wiki/index.php/Main_Page}
+\item Web: \url{http://physics.muni.cz/~vazny/wiki/index.php}
 \item Email: \href{mailto:jaroslav.vazny@gmail.com}{jaroslav.vazny@gmail.com}
 \item Phone: +42 606 77 65 64
 \end{itemize}
@@ -205,13 +205,13 @@ find optimal values for $C$ and $\gamma$ parameters. There is an exaple of heatm
 %	ACKNOWLEDGEMENTS
 %----------------------------------------------------------------------------------------
 
-%% \begin{block}{Acknowledgments}
+\begin{block}{Acknowledgment}
 
-%% \begin{itemize}
-%% \item Nam mollis tristique neque eu luctus. Suspendisse rutrum congue nisi sed convallis. Aenean id neque dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-%% \end{itemize}
+\begin{itemize}
+\item This research was supported by grant GAČR 13-08195S.
+\end{itemize}
 
-%% \end{block}
+\end{block}
 
 %----------------------------------------------------------------------------------------
 %	CLASSIFICATION
@@ -231,7 +231,7 @@ find optimal values for $C$ and $\gamma$ parameters. There is an exaple of heatm
 
 \begin{block}{Classification}
 \begin{itemize}
-\item Data were splited into training (75\%) and testing (25\%) sample. Reports for different reduction aproaches are show below compared to non-reduced data sample.
+\item Data were splited into training (75\%) and testing (25\%) sample. Reports for different reduction aproaches are show below compared to non-reduced data sample. Precision =  tp / (tp + fp), recall = tp / (tp + fn), f1-score~=~2~*~(precision * recall) / (precision + recall) where tp is true positive, fp false negaitive and fn false negative.
 \end{itemize}
 
 \begin{table}
@@ -272,10 +272,10 @@ avg/total   &    0.98  &   0.98 & 0.98 & 452 \\
 \toprule
 \textbf{Category} & \textbf{Precision} & \textbf{Recall} & \textbf{f1-score} & \textbf{Support}\\
 \midrule
-        1.0  &     0.97  &    1.00  &    0.98  &      61\\ 
-        2.0  &     1.00  &    0.97  &    0.99  &      74\\ 
-        3.0  &     0.99  &    1.00  &    1.00  &     303\\ 
-        4.0  &     1.00  &    0.86  &    0.92  &      14\\ 
+        1 &	0.97  &	   1.00	 &    0.98  &	   61\\ 
+	2 &	1.00  &	   0.97	 &    0.99  &	   74\\ 
+	3 &	0.99  &	   1.00	 &    1.00  &	  303\\ 
+	4 &	1.00  &	   0.86	 &    0.92  &	   14\\ 
 \midrule
 avg/total & 0.99 &     0.99  &    0.99  &     452 \\
 \bottomrule
@@ -288,10 +288,10 @@ avg/total & 0.99 &     0.99  &    0.99  &     452 \\
 \toprule
 \textbf{Category} & \textbf{Precision} & \textbf{Recall} & \textbf{f1-score} & \textbf{Support}\\
 \midrule
-        1.0   &    0.91  &    1.00  &    0.95  &      61\\ 
-        2.0   &    0.99  &    0.92  &    0.95  &      74\\ 
-        3.0   &    1.00  &    1.00  &    1.00  &     303\\ 
-        4.0   &    0.92  &    0.86  &    0.89  &      14\\ 
+        1  &	0.91  &	   1.00	 &    0.95  &	   61\\ 
+	2  &	0.99  &	   0.92	 &    0.95  &	   74\\ 
+	3  &	1.00  &	   1.00	 &    1.00  &	  303\\ 
+	4  &	0.92  &	   0.86	 &    0.89  &	   14\\ 
 
 \midrule
 avg/total & 0.98  &    0.98  &    0.98   &    452 \\
@@ -322,8 +322,8 @@ avg/total & 0.98  &    0.98  &    0.98   &    452 \\
 
 \begin{itemize}
 \item It is possible to dramatically reduce the number of dimensions of spectra in classification problem (here from 778 to 10).
-\item PCA, Isomap, LLE and has similar effects in this concrete classification problem.
-\item It is always important to tune correcponding hyperparameters.
+\item PCA, Isomap, LLE and has similar effects in this classification problem.
+\item It is always important to tune corresponding hyperparameters.
 \end{itemize}
 
 \end{block}
