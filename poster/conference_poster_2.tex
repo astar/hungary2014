@@ -95,7 +95,7 @@
 
 \begin{itemize}
 \item 
-There are 1805 manually classified spectra from Ondřejov observatory divided into 4 categories based on profile of the H-$\alpha$ line. We want to train a SVM classifier to automatically categorize the rest. Figure on the left shows the average spectrum in each cateory and on the right there are samples of individual spetra.
+There are 1805 manually classified spectra from Ondřejov observatory divided into 4 categories based on profile of the H-$\alpha$ line. We want to train a SVM classifier to automatically categorize the rest. Figure on the left shows the average spectrum in each category and on the right there are samples of individual spetra.
 
 
 \end{itemize}
@@ -231,7 +231,7 @@ find optimal values for $C$ and $\gamma$ parameters. There is an example of heat
 
 \begin{block}{Classification}
 \begin{itemize}
-\item Data were splited randomly into training (75\%) and testing (25\%) sample. Reports for different reduction aproaches are show below compared to non-reduced data sample. Precision =  tp / (tp + fp), recall = tp / (tp + fn), f1-score~=~2~*~(precision * recall) / (precision + recall) where tp is true positive, fp false negaitive and fn false negative.
+\item Data were splited randomly into training (75\%) and testing (25\%) sample. Reports for different reduction aproaches are shown below compared to non-reduced data sample. Precision =  tp / (tp + fp), recall = tp / (tp + fn), f1-score~=~2~*~(precision * recall) / (precision + recall) where tp is true positive, fp false negative and fn false negative.
 \end{itemize}
 
 \begin{table}
@@ -300,7 +300,7 @@ avg/total & 0.98  &    0.98  &    0.98   &    452 \\
 \caption{LLE Classification report}
 \end{table}
 
-
+The left figure shows classification confusion matrix. Graph on the right is a learning curve.
 
 
 \begin{columns} % Subdivide the first main column
